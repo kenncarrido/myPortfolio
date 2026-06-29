@@ -480,33 +480,129 @@ p{
 
 }
 
-/* =========================
-   TERMINAL
-========================= */
+/* ======================================
+   WINDOWS TERMINAL
+====================================== */
 
-.terminal{
+.terminal-window{
 
-    background:#000;
+    background:#0c0c0c;
 
-    border-radius:20px;
+    border-radius:12px;
 
-    padding:30px;
+    overflow:hidden;
 
-    border:1px solid #22c55e;
+    border:1px solid #303030;
 
-    color:#22c55e;
-
-    font-family:monospace;
-
-    overflow:auto;
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
 
 }
 
-.terminal pre{
+.terminal-header{
+
+    background:#202020;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 15px;
+
+}
+
+.terminal-buttons{
+
+    display:flex;
+
+    gap:8px;
+
+}
+
+.terminal-buttons span{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+}
+
+.close{
+
+    background:#ff5f57;
+
+}
+
+.minimize{
+
+    background:#ffbd2f;
+
+}
+
+.maximize{
+
+    background:#28ca42;
+
+}
+
+.terminal-title{
+
+    color:#d4d4d4;
+
+    font-size:14px;
+
+    font-family:Consolas, monospace;
+
+}
+
+.terminal-body{
+
+    background:#0c0c0c;
+
+    color:#cccccc;
+
+    padding:25px;
+
+    min-height:420px;
+
+    font-family:Consolas, monospace;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+.terminal-body pre{
 
     white-space:pre-wrap;
 
-    line-height:1.7;
+}
+
+.cursor{
+
+    display:inline-block;
+
+    width:10px;
+
+    background:#ffffff;
+
+    animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+50%{
+
+opacity:0;
+
+}
 
 }
 

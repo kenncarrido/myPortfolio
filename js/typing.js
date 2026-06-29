@@ -2,7 +2,7 @@ new Typed("#typing",{
 
     strings:[
 
-        "IT Support",
+        "Front-End Developer",
 
         "Web Developer",
 
