@@ -1,5 +1,350 @@
-<script src="https://cdn.tailwindcss.com"></script>
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenn Carrido | IT Support Portfolio</title>
 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-slate-950 text-white">
+
+    <!-- NAVBAR -->
+    <nav id="navbar"
+        class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="flex justify-between items-center py-5">
+
+                <h1 class="text-2xl font-bold text-blue-500">
+                    KC
+                </h1>
+
+                <ul class="hidden md:flex gap-8">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO -->
+    <section
+        class="min-h-screen flex items-center justify-center px-6">
+
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+            <div>
+
+                <p class="text-blue-500 mb-4">
+                    Hello, I'm
+                </p>
+
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    Kenn Carrido
+                </h1>
+
+                <h2 class="text-2xl md:text-3xl text-gray-300 mb-4">
+                    <span id="typing"></span>
+                </h2>
+
+                <p class="text-gray-400 leading-relaxed mb-8">
+                    BS Computer Science
+                    graduate with a strong
+                    foundation in hardware,
+                    software, and networking,
+                    looking to launch a career in
+                    Junior Front-End Developer.
+                    Brings solid troubleshooting
+                    skills, a customer-first mindset,
+                    and a drive to continuously
+                    grow
+
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+
+                    <a href="#contact"
+                        class="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+                        Contact Me
+                    </a>
+
+                    <a href="assets/resume.pdf"
+                        class="border border-blue-500 px-6 py-3 rounded-lg hover:bg-blue-500 transition">
+                        Download Resume
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="flex justify-center">
+
+                <img src="assets/images/profile.png"
+                    alt="Profile"
+                    class="w-80 rounded-full border-4 border-blue-500 shadow-xl">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24 px-6">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                About Me
+            </h2>
+
+            <div class="glass-card p-8">
+
+                <p class="text-gray-300 text-lg leading-relaxed">
+
+                    I am a Fresh BSIT Graduate passionate about
+                    technology, troubleshooting, and solving
+                    technical problems.
+
+                    During my internship, I gained hands-on
+                    experience in web development while building
+                    a strong foundation in Windows systems,
+                    networking, hardware troubleshooting,
+                    and technical support.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-24 px-6">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                Technical Skills
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="glass-card p-6">
+                    <h3 class="font-bold mb-4">Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-6">
+                    <h3 class="font-bold mb-4">Backend</h3>
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-6">
+                    <h3 class="font-bold mb-4">IT Support</h3>
+                    <ul>
+                        <li>Windows</li>
+                        <li>Networking</li>
+                        <li>Hardware Troubleshooting</li>
+                        <li>Microsoft Office</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="py-24 px-6">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-4xl font-bold mb-12 text-center">
+                Experience
+            </h2>
+
+            <div class="glass-card p-8">
+
+                <h3 class="text-2xl font-semibold mb-3">
+                    Web Developer Intern
+                </h3>
+
+                <p class="text-gray-400">
+                    Developed and maintained web-based applications,
+                    collaborated on system improvements,
+                    and gained practical experience in
+                    software development workflows.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-24 px-6">
+
+        <div class="max-w-6xl mx-auto">
+
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Projects
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="glass-card p-5">
+                    <img src="assets/images/project1.png"
+                        class="rounded-lg mb-4">
+                    <h3 class="font-bold">
+                        Student Information System
+                    </h3>
+                </div>
+
+                <div class="glass-card p-5">
+                    <img src="assets/images/project2.png"
+                        class="rounded-lg mb-4">
+                    <h3 class="font-bold">
+                        Portfolio Website
+                    </h3>
+                </div>
+
+                <div class="glass-card p-5">
+                    <img src="assets/images/project3.png"
+                        class="rounded-lg mb-4">
+                    <h3 class="font-bold">
+                        OJT Project
+                    </h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TERMINAL -->
+    <section class="py-24 px-6">
+
+        <div class="max-w-5xl mx-auto">
+
+            <h2 class="text-4xl text-center font-bold mb-12">
+                Terminal
+            </h2>
+
+            <div class="terminal">
+
+<pre>
+C:\Users\Kenn>
+
+whoami
+
+Kenn Carrido
+
+Fresh BSCS Graduate
+
+skills
+
+HTML
+CSS
+JavaScript
+PHP
+MySQL
+Windows
+Networking
+Hardware Troubleshooting
+
+status
+
+Open To Work
+</pre>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 px-6">
+
+        <div class="max-w-5xl mx-auto">
+
+            <h2 class="text-4xl font-bold text-center mb-12">
+                Contact
+            </h2>
+
+            <div class="glass-card p-8">
+
+                <div class="space-y-4">
+
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        kenncarridonam@gmail.com
+                    </p>
+
+                    <p>
+                        <i class="fa-brands fa-github"></i>
+                        github.com/kenncarrido
+                    </p>
+
+                    <p>
+                        <i class="fa-brands fa-linkedin"></i>
+                        linkedin.com/in/kenncarrido
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 text-center text-gray-500">
+
+        © 2026 Kenn Carrido. All Rights Reserved.
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
