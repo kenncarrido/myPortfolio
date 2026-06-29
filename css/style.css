@@ -458,11 +458,198 @@ p{
    PROJECTS
 ========================= */
 
+.projects-grid{
+
+display:grid;
+
+grid-template-columns:1.5fr 1fr;
+
+gap:25px;
+
+grid-auto-rows:auto;
+
+
+}
+
+.featured-project{
+
+position:relative;
+
+grid-row:span 2;
+
+overflow:hidden;
+
+border:2px solid #FFD54A;
+
+background:linear-gradient(
+145deg,
+rgba(255,215,0,.08),
+rgba(255,255,255,.04)
+);
+
+animation:goldGlow 3s infinite;
+
+}
+
+.featured-project img{
+
+width: 100%;
+height: 320px;
+object-fit: contain;
+object-position: center;
+background: #ffffff;
+
+}
+
+.project-content{
+
+padding:30px;
+
+}
+
+.project-content h3{
+
+font-size:1.5rem;
+
+margin-bottom:1px;
+
+}
+
+.project-content p {
+
+font-size: 0.9rem;
+line-height: 1.2;
+color: #cbd5e1;
+font-weight: 400;
+text-align: justify;
+
+}
+
+.project-stars{
+
+font-size:22px;
+
+color:#FFD54A;
+
+margin-bottom:10px;
+
+letter-spacing:4px;
+
+}
+
+.featured-badge{
+
+position:absolute;
+
+top:20px;
+
+right:20px;
+
+background:linear-gradient(
+45deg,
+#FFD54A,
+#F59E0B
+);
+
+padding:10px 18px;
+
+border-radius:50px;
+
+font-weight:bold;
+
+color:#111;
+
+box-shadow:0 5px 20px rgba(255,215,0,.4);
+
+z-index:2;
+
+}
+
+.project-tech{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin:25px 0;
+
+}
+
+.project-tech span{
+
+padding:8px 16px;
+
+background:#1e293b;
+
+border-radius:30px;
+
+font-size:14px;
+
+}
+
+.project-buttons{
+
+display:flex;
+
+gap:15px;
+
+}
+
+.project-buttons a{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:12px 22px;
+
+border:2px solid #3b82f6;
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:#3b82f6;
+
+transition:.3s;
+
+}
+
+.project-buttons a:hover{
+
+transform:translateY(-4px);
+
+background:#3b82f6;
+
+color:white;
+
+}
+
+.project-small{
+
+padding:20px;
+
+}
+
+.project-small img{
+
+height:180px;
+
+width:100%;
+
+object-fit:cover;
+
+border-radius:12px;
+
+}
+
 #projects img{
 
     width:100%;
-
-    border-radius:15px;
 
     transition:.4s;
 
@@ -470,13 +657,13 @@ p{
 
 #projects img:hover{
 
-    transform:scale(1.04);
+    transform:scale(1.06);
 
 }
 
 #projects h3{
 
-    margin-top:15px;
+    margin-top:1px;
 
 }
 
@@ -694,71 +881,7 @@ footer{
 
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 
-@media(max-width:1024px){
-
-    section{
-
-        padding:80px 6%;
-
-    }
-
-}
-
-@media(max-width:768px){
-
-    nav ul{
-
-        display:none;
-
-    }
-
-    section{
-
-        padding:70px 6%;
-
-    }
-
-    h1{
-
-        font-size:42px !important;
-
-    }
-
-    h2{
-
-        font-size:30px !important;
-
-    }
-
-    .hero{
-
-        text-align:center;
-
-    }
-
-    .hero img{
-
-        width:240px;
-
-        margin-top:40px;
-
-    }
-
-}
-
-@media(max-width:480px){
-
-    h1{
-
-        font-size:34px !important;
-
-    }
-
-}
 
 #progress-bar{
 
@@ -777,3 +900,4 @@ width:0;
 z-index:9999;
 
 }
+

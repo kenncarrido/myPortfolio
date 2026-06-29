@@ -393,3 +393,77 @@
     animation:gradient 15s ease infinite;
 
 }
+
+.featured-project::before{
+
+content:"";
+
+position:absolute;
+
+top:-150%;
+
+left:-150%;
+
+width:60%;
+
+height:400%;
+
+background:linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255, 229, 84, 0.479),
+
+transparent
+
+);
+
+transform:rotate(25deg);
+
+animation:shine 4s infinite;
+
+}
+
+@keyframes shine{
+
+0%{
+
+left:-180%;
+
+}
+
+100%{
+
+left:180%;
+
+}
+
+}
+
+@keyframes goldGlow{
+
+0%{
+
+box-shadow:0 0 0px rgba(255,215,0,.25);
+
+}
+
+50%{
+
+box-shadow:
+
+0 0 10px rgba(255,215,0,.8),
+
+0 0 20px rgba(255,215,0,.25);
+
+}
+
+100%{
+
+box-shadow:0 0 0px rgba(255,215,0,.25);
+
+}
+
+}
