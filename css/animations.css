@@ -394,6 +394,10 @@
 
 }
 
+/* ==========================
+   Projects
+========================== */
+
 .featured-project::before{
 
 content:"";
@@ -465,5 +469,81 @@ box-shadow:
 box-shadow:0 0 0px rgba(255,215,0,.25);
 
 }
+
+}
+
+
+.fade-up{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.float{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ==========================
+   Progress Bar
+========================== */
+
+#progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+background:#3b82f6;
+
+width:0;
+
+z-index:9999;
 
 }

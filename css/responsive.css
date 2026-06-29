@@ -53,6 +53,7 @@
         width:240px;
 
         margin-top:40px;
+        
 
     }
 
@@ -226,6 +227,8 @@
 @media (max-width:576px){
 
     section{
+        
+        margin-top:50px;
 
         padding:60px 5%;
 
@@ -262,6 +265,24 @@
         text-align:center;
 
         margin-bottom:15px;
+
+    }
+
+    .project-buttons{
+
+        width:100%;
+
+        text-align:center;
+
+        font-size:12px;
+
+    }
+
+    .project-buttons svg{
+
+        width:12px;
+
+        height:12px;
 
     }
 

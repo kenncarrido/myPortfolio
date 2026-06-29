@@ -427,16 +427,6 @@ h2{
 }
 
 /* =========================
-   PARAGRAPH
-========================= */
-
-p{
-
-    line-height:1.8;
-
-}
-
-/* =========================
    SKILLS
 ========================= */
 
@@ -472,6 +462,11 @@ grid-auto-rows:auto;
 }
 
 .featured-project{
+display:flex;
+
+flex-direction:column;
+
+justify-content:space-evenly;
 
 position:relative;
 
@@ -488,6 +483,8 @@ rgba(255,255,255,.04)
 );
 
 animation:goldGlow 3s infinite;
+
+
 
 }
 
@@ -507,21 +504,18 @@ padding:30px;
 
 }
 
-.project-content h3{
+.project-content h3, .project-small h3{
 
-font-size:1.5rem;
+font-size:2rem;
 
 margin-bottom:1px;
 
 }
 
-.project-content p {
+.project-content p, .project-small p{
 
-font-size: 0.9rem;
-line-height: 1.2;
+font-size: 1.2rem;
 color: #cbd5e1;
-font-weight: 400;
-text-align: justify;
 
 }
 
@@ -637,7 +631,7 @@ padding:20px;
 
 .project-small img{
 
-height:180px;
+height: 300px;
 
 width:100%;
 
@@ -657,13 +651,13 @@ border-radius:12px;
 
 #projects img:hover{
 
-    transform:scale(1.06);
+    transform:scale(1.04);
 
 }
 
 #projects h3{
 
-    margin-top:1px;
+    margin-top:20px;
 
 }
 
@@ -820,84 +814,6 @@ opacity:0;
 footer{
 
     border-top:1px solid rgba(255,255,255,.08);
-
-}
-
-/* =========================
-   ANIMATIONS
-========================= */
-
-.fade-up{
-
-    animation:fadeUp .8s ease;
-
-}
-
-@keyframes fadeUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
-
-.float{
-
-    animation:float 4s ease-in-out infinite;
-
-}
-
-@keyframes float{
-
-    0%{
-
-        transform:translateY(0);
-
-    }
-
-    50%{
-
-        transform:translateY(-15px);
-
-    }
-
-    100%{
-
-        transform:translateY(0);
-
-    }
-
-}
-
-
-
-#progress-bar{
-
-position:fixed;
-
-top:0;
-
-left:0;
-
-height:4px;
-
-background:#3b82f6;
-
-width:0;
-
-z-index:9999;
 
 }
 

@@ -11,7 +11,7 @@ kenn-carrido
 
 PS C:\\Users\\Kenn> job
 
-Fresh BSCS Graduate
+BSCS Graduate
 Front-End Web Developer
 
 PS C:\\Users\\Kenn> skills
