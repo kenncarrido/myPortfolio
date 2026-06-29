@@ -337,47 +337,12 @@ section{
    BUTTONS
 ========================= */
 
-.btn{
+.hero-btn{
 
-    display:inline-block;
-
-    padding:14px 28px;
-
-    border-radius:12px;
-
-    text-decoration:none;
-
-    transition:.3s;
-
-}
-
-.btn-primary{
-
-    background:#2563eb;
-
-    color:white;
-
-}
-
-.btn-primary:hover{
-
-    background:#1d4ed8;
-
-    transform:translateY(-3px);
-
-}
-
-.btn-outline{
-
-    border:2px solid #2563eb;
-
-    color:white;
-
-}
-
-.btn-outline:hover{
-
-    background:#2563eb;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    justify-content:start;
 
 }
 
@@ -792,6 +757,17 @@ opacity:0;
 
     font-size:18px;
 
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+#contact p:hover{
+
+    color:#3b82f6;
+    text-decoration:underline;
+
 }
 
 #contact i{
@@ -801,6 +777,8 @@ opacity:0;
     color:#3b82f6;
 
 }
+
+
 
 /* =========================
    FOOTER

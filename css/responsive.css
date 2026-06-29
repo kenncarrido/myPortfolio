@@ -192,6 +192,15 @@
 
     }
 
+    .hero-btn{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+    justify-content:center;
+
+    }
+
     .hero img{
 
         width:230px;
@@ -268,6 +277,19 @@
 
     }
 
+    .hero-btn{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+    justify-content:center;
+
+    }
+
+}
+
+    
+
     .project-buttons{
 
         width:100%;
@@ -306,7 +328,7 @@
 
     }
 
-}
+
 
 /* ===========================
    Very Small Devices
