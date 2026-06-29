@@ -82,7 +82,7 @@
 
     <!-- HERO -->
     <section
-        class="min-h-screen flex items-center justify-center px-6">
+        class="hero min-h-screen flex items-center justify-center px-6">
 
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
@@ -112,12 +112,15 @@
                 <div class="flex flex-wrap gap-4">
 
                     <a href="#contact"
-                        class="bg-blue-600 px-6 py-3 rounded-full hover:bg-blue-700 transition ease-in-out duration-300">
+                        class="bg-blue-600 px-6 py-3 rounded-full hover:bg-blue-900 transition ease-in-out duration-300
+                        transform hover:scale-105">
                         Contact Me
                     </a>
 
                     <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer"
-                        class="border border-blue-500 px-6 py-3 rounded-full hover:bg-blue-500 transition ease-in-out duration-300">
+                        class="border border-blue-600 px-6 py-3 rounded-full hover:bg-blue-600 
+                        transition ease-in-out duration-300
+                        transform hover:scale-105">
                         Download Resume
                     </a>
 
@@ -130,7 +133,6 @@
                 <img src="assets/images/profile.png"
                     alt="Profile"
                     class="w-80 rounded-full border-4 border-blue-500 shadow-xl">
-
             </div>
 
         </div>
@@ -249,7 +251,7 @@
     <!-- PROJECTS -->
     <section id="projects">
 
-    <h2>Featured Projects</h2>
+    <h2 class="featProj"">Featured Projects</h2>
 
     <div class="projects-grid">
 
@@ -399,18 +401,24 @@
                 <div class="space-y-4">
 
                     <p>
-                        <i class="fa-solid fa-envelope"></i>
+                        <a onclick="window.open('https://mail.google.com/mail/?view=cm&fs=1&to=kenncarridonam@gmail.com','_blank')">
+                            <i class="fa-solid fa-envelope mr-2"></i>
                             kenncarridonam@gmail.com
+                        </a>
                     </p>
 
                     <p>
-                        <i class="fa-brands fa-github"></i>
+                        <a onclick="window.open('https://github.com/kenncarrido','_blank')">
+                            <i class="fa-brands fa-github"></i>
                             github.com/kenncarrido
+                        </a>
                     </p>
 
                     <p>
-                        <i class="fa-brands fa-facebook"></i>
+                        <a onclick="window.open('https://facebook.com/namsinxi.cn','_blank')">
+                            <i class="fa-brands fa-facebook"></i>
                             facebook.com/namsinxi.cn
+                        </a>
                     </p>
 
                     

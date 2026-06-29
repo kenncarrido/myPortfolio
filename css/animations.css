@@ -547,3 +547,28 @@ width:0;
 z-index:9999;
 
 }
+
+/* Floating Animation */
+@keyframes floating {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(-8px) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(0deg);
+    }
+
+    75% {
+        transform: translateY(-8px) rotate(1deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+}
