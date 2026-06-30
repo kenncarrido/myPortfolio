@@ -1,11 +1,25 @@
-const button = document.getElementById("theme-toggle");
+const themeToggle = document.getElementById("theme-toggle");
 
-if(button){
+const savedTheme = localStorage.getItem("theme");
 
-button.addEventListener("click",()=>{
+if (savedTheme === "light") {
 
-document.body.classList.toggle("light");
-
-});
+    document.body.classList.add("light");
 
 }
+
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("light");
+
+    if (document.body.classList.contains("light")) {
+
+        localStorage.setItem("theme", "light");
+
+    } else {
+
+        localStorage.setItem("theme", "dark");
+
+    }
+
+});

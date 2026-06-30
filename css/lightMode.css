@@ -1,0 +1,389 @@
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#2563eb;
+    border-radius:50px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+
+
+/* ==========================
+   THEME TOGGLE
+========================== */
+
+.theme-toggle{
+
+    width:80px;
+
+    height:36px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 13px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    margin-left:20px;
+
+}
+
+.theme-toggle:hover{
+
+    background:rgba(255,255,255,.2);
+    scale:1.05;
+
+}
+
+.theme-toggle i{
+
+    font-size:14px;
+
+    z-index:2;
+
+}
+
+.fa-moon{
+
+    color:#f8fafc;
+
+}
+
+.fa-sun{
+
+    color:#FFD54A;
+
+}
+
+.toggle-circle{
+
+    position:absolute;
+
+    left:5px;
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+
+    background:#3b82f6;
+
+    transition:.35s;
+
+    box-shadow:0 0 15px rgba(59,130,246,.4);
+
+}
+
+/* ==========================
+   LIGHT MODE
+========================== */
+
+body.light{
+
+    background:linear-gradient(
+        145deg,
+        rgb(191, 212, 255),
+        rgb(0, 81, 255)
+    );
+
+}
+
+body.light span, body.light p{
+
+    color:#0062ff;
+
+}
+
+body.light .hero-name, body.light .about-title, body.light .work-title, body.light .project-title,
+body.light .featProj, body.light .contact-title, body.light, body.light .terminal-title .footer-text{
+
+    color:#111827;
+
+}
+
+body.light #navbar{
+
+    background:#9bb6ff5b;
+
+    backdrop-filter:blur(20px);
+
+}
+
+body.light .glass-card{
+
+    background:rgba(255, 255, 255, 0.322);
+
+    color:#111827;
+
+    border:1px solid rgba(0,0,0,.08);
+
+}
+
+body.light .terminal-window{
+
+    background:#ffffff;
+
+}
+
+body.light .terminal-header{
+
+    background:#ececec;
+
+}
+
+body.light .terminal-body{
+
+    background:#ffffff;
+
+    color:#111827;
+
+}
+
+body.light .hero p, body.light .glass-card p, body.light .project-small p, body.light .project-tech span, body.light .glass-card li{
+
+    color:#111827;
+
+}
+
+body.light .nav-links a{
+
+    color:#111827;
+
+}
+
+body.light .toggle-circle{
+
+    transform:translateX(40px);
+
+    background:#FFD54A;
+
+    box-shadow:0 0 18px rgba(255,213,74,.5);
+
+}
+
+body.light .fa-sun{
+
+    color:#000000;
+
+}
+
+body.light .fa-moon{
+
+    color:#111827;
+
+}
+
+body.light .theme-toggle{
+
+    background:#3b83f681;
+
+}
+
+body.light .theme-toggle:hover{
+
+    background:#3b83f6a1;
+
+}
+
+body.light nav.scrolled{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+body.light #mobileMenu{
+
+    background:#ffffff6c;
+    backdrop-filter:blur(20px);
+
+}
+
+body.light #mobileMenu a{
+
+    color:#111827;
+
+}
+
+body.light #mobileMenu a:hover{
+
+    background:#3b83f638;
+
+    color:white;
+
+}
+
+body.light #contact p:hover{
+
+    color:#0062ff;
+
+    text-decoration:underline;
+
+}
+
+body.light .hero-contact{
+
+    color:#ffffff;
+
+}
+
+body.light .hero-contact:hover{
+
+    background:#0062ff;
+
+    color:white;
+
+}
+
+body.light .hero-resume{
+
+    color:#0062ff;
+
+    border:2px solid #0062ff;
+
+}
+
+body.light footer{
+
+    border-top:1px solid rgba(0,0,0,.08);
+
+}
+
+body.light .project-buttons a{
+
+    border:2px solid #0062ff;
+
+    color:#0062ff;
+
+}
+
+body.light .project-buttons a:hover{
+
+    background:#0062ff;
+
+    color:white;
+
+}
+
+body.light .featured-project{
+
+    border:2px solid #FFD54A;
+
+    background:linear-gradient(
+        145deg,
+        rgba(255,215,0,.08),
+        rgba(255,255,255,.04)
+    );
+
+    animation:goldGlow 3s infinite;
+
+}
+
+body.light .featured-badge{
+
+    background:linear-gradient(
+        45deg,
+        #FFD54A,
+        #F59E0B
+    );
+
+    box-shadow:0 5px 20px rgba(255,215,0,.4);
+
+}
+
+body.light .project-tech span{
+
+    background:#e2e8f06e;
+
+    color:#111827;
+
+}
+
+body.light .project-small img{
+
+    background:#ffffff;
+
+}
+
+body.light .hero img{
+
+    border: 4px solid #3b82f6;
+
+    box-shadow:
+        0 0 25px rgba(59,130,246,.6),
+        0 0 50px rgba(59,130,246,.35),
+        0 25px 50px rgba(0,0,0,.45);
+
+}
+
+body.light .hero img:hover {
+
+    box-shadow:
+        0 0 25px rgba(59,130,246,.6),
+        0 0 50px rgba(59,130,246,.35),
+        0 25px 50px rgba(0,0,0,.45);
+
+}
+
+
+body.light .hero-btn a:hover{
+
+    background:#0062ff;
+
+    color:white;
+
+}
+
+body.light .terminal-buttons .close{
+
+    background:#ff5f57;
+
+}
+
+body.light .terminal-buttons .minimize{
+
+    background:#ffbd2f;
+
+}
+
+body.light .terminal-buttons .maximize{
+
+    background:#28ca42;
+
+}
+
+body.light .terminal-title{
+
+    color:#111827;
+
+}
+

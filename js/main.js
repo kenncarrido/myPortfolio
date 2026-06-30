@@ -68,14 +68,30 @@ window.addEventListener("scroll",()=>{
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
 
-if (hamburger && mobileMenu) {
-    hamburger.addEventListener("click", () => {
-        mobileMenu.classList.toggle("show");
+hamburger.addEventListener("click", () => {
+
+    hamburger.classList.toggle("active");
+
+    mobileMenu.classList.toggle("show");
+
+});
+
+document.querySelectorAll("#mobileMenu a").forEach(link=>{
+
+    link.addEventListener("click",()=>{
+
+        mobileMenu.classList.remove("show");
+
+        hamburger.classList.remove("active");
+
     });
 
-    document.querySelectorAll("#mobileMenu a").forEach(link => {
-        link.addEventListener("click", () => {
-            mobileMenu.classList.remove("show");
-        });
-    });
-}
+});
+
+window.addEventListener("scroll",()=>{
+
+    mobileMenu.classList.remove("show");
+
+    hamburger.classList.remove("active");
+
+});

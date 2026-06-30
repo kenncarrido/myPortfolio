@@ -11,6 +11,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -26,6 +28,7 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/particles.css">
+    <link rel="stylesheet" href="css/lightMode.css">
     
 
 </head>
@@ -53,6 +56,15 @@
                     <li><a href="#contact">Contact</a></li>
 
                 </ul>
+                <div class="theme-toggle" id="theme-toggle">
+
+                    <i class="fas fa-moon"></i>
+
+                    <div class="toggle-circle"></div>
+
+                    <i class="fas fa-sun"></i>
+
+                </div>
 
                 <div id="hamburger">
 
@@ -88,11 +100,11 @@
 
             <div>
 
-                <p class="text-blue-500 mb-4">
+                <p>
                     Hello, I'm
                 </p>
 
-                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <h1 class="hero-name text-5xl md:text-7xl font-bold mb-6">
                     Kenn Carrido
                 </h1>
 
@@ -100,7 +112,7 @@
                     <span id="typing"></span>
                 </h2>
 
-                <p class="text-gray-400 leading-relaxed mb-8">
+                <p class="text-gray-400 mb-6 leading-relaxed">
                     BS Computer Science graduate with a strong foundation in front-end development, computer hardware,
                     software, and networking. Seeking to launch a career as a Junior Front-End Developer,
                     leveraging problem solving skills, attention to detail, and a passion for building responsive
@@ -112,13 +124,13 @@
                 <div class="hero-btn" class="flex flex-wrap gap-20">
 
                     <a href="#contact"
-                        class="bg-blue-600 px-6 py-3 rounded-full hover:bg-blue-900 transition ease-in-out duration-300
+                        class="hero-contact bg-blue-600 px-6 py-3 rounded-full hover:bg-blue-900 transition ease-in-out duration-300
                         transform hover:scale-105">
                         Contact Me
                     </a>
 
                     <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer"
-                        class="border border-blue-600 px-6 py-3 rounded-full hover:bg-blue-600 
+                        class="hero-resume border border-blue-600 px-6 py-3 rounded-full hover:bg-blue-600 
                         transition ease-in-out duration-300
                         transform hover:scale-105">
                         Download Resume
@@ -144,7 +156,7 @@
 
         <div class="max-w-6xl mx-auto">
 
-            <h2 class="text-4xl font-bold mb-12 text-center">
+            <h2 class="about-title text-4xl font-bold mb-12 text-center">
                 About Me
             </h2>
 
@@ -218,7 +230,7 @@
 
         <div class="max-w-6xl mx-auto">
 
-            <h2 class="text-4xl font-bold mb-12 text-center">
+            <h2 class="work-title text-4xl font-bold mb-12 text-center">
                 Work Experience
             </h2>
 
@@ -322,13 +334,27 @@
 
         <!-- Project 2 -->
 
-        <div class="glass-card project-small">
+        <div onclick="window.open('https://kenncarrido.github.io/myPortfolio/','_blank')" class="glass-card project-small">
 
             <img src="assets/images/Project2.png" alt="Project 2">
 
             <h3>Portfolio Website</h3>
 
-            <p>Sample Description for Portfolio Website</p>            
+            <div class="project-tech">
+
+                    <span>HTML</span>
+
+                    <span>CSS</span>
+
+                    <span>Tailwind</span>
+
+                    <span>JavaScript</span>
+
+
+                </div>
+
+            <p>A personal portfolio website showcasing my projects, technical skills, certifications, and experience in web development. It serves as a central hub for my work, achievements, and professional journey.
+</p>            
 
         </div>
 
@@ -353,7 +379,7 @@
 
     <div class="max-w-5xl mx-auto">
 
-        <h2 class="text-4xl font-bold text-center mb-12">
+        <h2 class="terminal-title text-4xl font-bold text-center mb-12">
             Terminal
         </h2>
 
@@ -392,7 +418,7 @@
 
         <div class="max-w-5xl mx-auto">
 
-            <h2 class="text-4xl font-bold text-center mb-12">
+            <h2 class="contact-title text-4xl font-bold text-center mb-12">
                 Contact
             </h2>
 
