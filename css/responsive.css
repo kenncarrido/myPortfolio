@@ -131,9 +131,6 @@
         gap:20px;
     }
 
-    .hero{
-        text-align:center;
-    }
 
     .hero img{
         width:280px;
@@ -314,17 +311,17 @@
 
     }
 
-    .terminal{
+    
 
-        padding:20px;
+    footer{
 
         font-size:14px;
 
     }
 
-    footer{
+    .featured-badge{
 
-        font-size:14px;
+        font-size:12px;
 
     }
 
@@ -357,6 +354,24 @@
     .hero img{
 
         width:150px;
+
+    }
+
+    #contact .glass-card p{
+
+        font-size:.8rem;
+
+    }
+
+    .project-content p, .project-small p{
+
+        font-size:.8rem;
+
+    }
+
+    .project-content h3, .project-small h3{
+
+        font-size:1.2rem;
 
     }
 

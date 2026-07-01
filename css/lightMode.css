@@ -135,6 +135,22 @@ body.light #navbar{
 
 }
 
+body.light nav.scrolled{
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+body.light .logo{
+
+    color:#0051ff;
+
+}
+
 body.light .glass-card{
 
     background:rgba(255, 255, 255, 0.322);
@@ -142,6 +158,14 @@ body.light .glass-card{
     color:#111827;
 
     border:1px solid rgba(0,0,0,.08);
+
+}
+
+body.light .glass-card:hover{
+
+    border-color:#ffffff;
+
+    box-shadow:0 10px 40px rgb(52, 116, 255);
 
 }
 
@@ -236,7 +260,7 @@ body.light #mobileMenu a{
 
 body.light #mobileMenu a:hover{
 
-    background:#3b83f638;
+    background:#0062ff;
 
     color:white;
 
@@ -336,20 +360,23 @@ body.light .project-small img{
 
 body.light .hero img{
 
-    border: 4px solid #3b82f6;
+    border: 4px solid #0062ff;
 
     box-shadow:
         0 0 25px rgba(59,130,246,.6),
         0 0 50px rgba(59,130,246,.35),
         0 25px 50px rgba(0,0,0,.45);
 
+    transition: all 0.5s ease, box-shadow 0.5s ease;
+
 }
 
 body.light .hero img:hover {
 
+    border: 4px solid #ffffff;
     box-shadow:
-        0 0 25px rgba(59,130,246,.6),
-        0 0 50px rgba(59,130,246,.35),
+        0 0 25px rgb(142, 185, 255),
+        0 0 50px rgb(59, 131, 246),
         0 25px 50px rgba(0,0,0,.45);
 
 }
@@ -357,11 +384,14 @@ body.light .hero img:hover {
 
 body.light .hero-btn a:hover{
 
-    background:#0062ff;
+    background:#0041aa;
+
+    border:2px solid #0062ff;
 
     color:white;
 
 }
+
 
 body.light .terminal-buttons .close{
 
@@ -387,3 +417,16 @@ body.light .terminal-title{
 
 }
 
+body.light .terminal-body p{
+
+    color:#111827;
+
+}
+
+body.light footer{
+
+    color:#111827;
+
+    border-top:1px solid rgba(0, 0, 0, 0.658);
+
+}

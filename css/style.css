@@ -703,6 +703,16 @@ border-radius:12px;
    WINDOWS TERMINAL
 ====================================== */
 
+#terminal{
+
+    display:flex;
+
+    justify-content:center;
+
+    
+
+}
+
 .terminal-window{
 
     background:#0c0c0c;
@@ -715,7 +725,8 @@ border-radius:12px;
 
     box-shadow:0 20px 60px rgba(0,0,0,.4);
 
-    width: 900px;
+    width: 95vw;
+    max-width: 100%;
 
 }
 
